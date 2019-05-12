@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="css/home.css" rel="stylesheet">
+    <title>My FIRST SpringBoot app</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form th:action="@{/greeting}" method="get">
+    <h class="message">Witaj. Podaj swoje dane</h>
+    <br>
+    <br>
+    <label for="firstname">Imię</label>
+    <input type="text" name="firstname" id="firstname"><br>
+    <label for="lastname">Nazwisko</label>
+    <input type="text" name="lastname" id="lastname"><br>
+    <input type="submit" value="Wyślij">
+</form>
+
+</body>
+</html>
